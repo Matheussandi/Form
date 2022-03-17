@@ -1,12 +1,12 @@
 <?php
-
     class Form {
         public static function alert($type, $message) {
             if($type == 'error') {
-                echo '<div style="font-size: 2rem">' .$message. '</div>';
+                // Alerta não ficou muito agradável
+                /* echo '<div style="font-size: 2rem">' .$message. '</div>'; */
                 return false;
             } else if($type == 'success') {
-                echo '<div style="font-size: 2rem>' .$message. '</div>';
+                /* echo '<div style="font-size: 2rem>' .$message. '</div>'; */
                 return true;
             }
         }
@@ -16,5 +16,4 @@
             $sql->execute(array($name, $user, $email, $password, $date));
         }
     }
-
 ?>

@@ -1,8 +1,3 @@
-<?php
-    include('./config.php');
-    Mysql::connect();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,34 +15,8 @@
 </head>
 
 <body>
-    <form method="POST" name="form" class="container">
+    <form method="post" name="form" class="container" action="authentication.php">
         <div class="row">
-
-        <?php
-            if(isset($_POST['action']) && $_POST['form'] == 'f_form') {
-                $name = $_POST['fullName'];
-                $user = $_POST['user'];
-                $email = $_POST['email'];
-                $password = $_POST['password'];
-
-                if($name == '') {
-                    Form::alert('error', 'Nome em branco');
-                } else if($user == '') {
-                    Form::alert('error', 'Usuário em branco');
-                } else if($email == '') {
-                    Form::alert('error', 'Email vazio');
-                } else if ($password == '') {
-                    Form::alert('error', 'Senha em branco');
-                } else {
-                    $datenow = new DateTime('now', new DateTimeZone('America/Sao_Paulo'));
-                    $date = date_format($datenow,"Y/m/d H:i:s");
-
-                    Form::register($name, $user, $email, $password, $date);
-                    Form::alert('success', 'Usuário ' .$user. 'castrado com sucesso');
-                }
-            }
-        ?>
-
             <div class="form-group col-6">
                 <img src="img/image.png" alt="image" class="img-responsive rounded float-left">
             </div>
@@ -57,25 +26,9 @@
 
                 <div class="form-group">
                     <div class="offset-md-3 mb-3">
-                        <label>Nome de Completo</label>
-                        <input type="text" name="fullName" class="form-control mt-2 form-control-lg"
-                            placeholder="Digite seu nome completo">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="offset-md-3 mb-3">
-                        <label>Usuário</label>
-                        <input type="text" name="user" class="form-control mt-2 form-control-lg"
-                            placeholder="Digite seu usuário">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="offset-md-3 mb-3">
-                        <label>Email</label>
-                        <input type="email" name="email" class="form-control mt-2 form-control-lg"
-                            placeholder="Digite seu email">
+                        <label>Nome de usuário ou endereço de email</label>
+                        <input type="text" name="email" class="form-control mt-2 form-control-lg"
+                            placeholder="Digite seu usuário ou email">
                     </div>
                 </div>
 
@@ -87,16 +40,21 @@
                     </div>
                 </div>
 
-<!--                 <div>
-                    <button type="submit" name="action" value="register" class="offset-md-3 btn btn-primary color botao mt-3">Cadastrar</button>
-                </div> -->
-
                 <div>
-                    <input type="submit" name="action" value="Cadastrar" class="offset-md-3 btn btn-primary color botao mt-3">
+                    <div class="offset-md-3 mb-4">
+                        <input type="checkbox">
+                        <label>Matenha-me conectado</label>
+
+                        <!-- flex -->
+                        <div class="row">
+                            <a href="#" style="text-decoration:none">Esqueceu a senha?</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <input type="hidden" name="form" value="f_form">
+                <div class="offset-md-3">
+                    <input type="submit" name="submit" value="Entrar" class=" btn color botao">
+                    <a href="register.php" class=" btn botao color">Cadastre-se</a>
                 </div>
             </div>
         </div>

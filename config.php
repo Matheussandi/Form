@@ -11,4 +11,6 @@
     define('DATABASE', 'form_cadastro');
     define('USER', 'root');
     define('PASSWORD', '');
+
+    $connection = new mysqli(HOST, USER, PASSWORD, DATABASE);
 ?>
