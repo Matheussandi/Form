@@ -4,6 +4,8 @@ Formulário com usuário/email e senha, ligado ao banco de dados para conferir s
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/29473781/159003560-3c205ee2-d925-44dd-ab7f-fce37e7b08f8.gif" />
+    <br>
+  (Até criei uma alerta caso algo esteja inválido, porém não ficou muito agradável a mensagem então decidi só recarregar a página)
 </p>
 
 <p align="center">
@@ -41,7 +43,7 @@ Formulário com usuário/email e senha, ligado ao banco de dados para conferir s
 <br>
 2º - Abra o PhpMyAdmin;
 <br>
-3º - Crie uma base de dados chamado form_cadastro e a tabela com nome de formulario(caso não utilize o phpmyadmin ou o nome do seu banco de dados seja diferente, basta modificar os dados no arquivo config.php);
+3º - Crie uma base de dados chamado form_cadastro e a tabela com nome de formulario(caso não utilize o phpmyadmin ou o nome do seu banco de dados seja diferente, basta modificar os dados no arquivo config.php. Note que USER e PASSWORD é do adminstrador do banco de dados);
 <p align="center">
   <img src="https://user-images.githubusercontent.com/29473781/159006791-0938bc62-79b2-41e0-a235-612828280a64.png" />
 </p>
