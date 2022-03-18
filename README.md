@@ -41,7 +41,7 @@ Formulário com usuário/email e senha, ligado ao banco de dados para conferir s
 
 1º - Inicie WampServer;
 <br>
-2º - Abra o PhpMyAdmin;
+2º - Abra o PhpMyAdmin ou MySQL;
 <br>
 3º - Crie uma base de dados chamado form_cadastro e a tabela com nome de formulario(caso não utilize o phpmyadmin ou o nome do seu banco de dados seja diferente, basta modificar os dados no arquivo config.php. Note que USER e PASSWORD é do adminstrador do banco de dados);
 <p align="center">
