@@ -2,13 +2,24 @@
 
 Formulário com usuário/email e senha, ligado ao banco de dados para conferir se o usuário realmente está cadastrado, senão ele poderá realizar o cadastro.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29473781/159003560-3c205ee2-d925-44dd-ab7f-fce37e7b08f8.gif" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29473781/159004565-cf8f9462-3880-4b58-8f20-1caff10972a8.gif" />
+  <br>
+  (Os ids não estão começando no 1 porque eu já tinha realizado vários testes antes)
+</p>
+
+
 # 🛠️ Recursos
 
 - [x] Login.
+
+- [x] Cadastro;
  
 - [x] Autenticação com banco de dados;
- 
-- [x] Cadastro;
  
 - [x] Mensagem de usuário logado;
  
@@ -25,4 +36,13 @@ Formulário com usuário/email e senha, ligado ao banco de dados para conferir s
 - [WampServer](https://www.wampserver.com/en/)
  
 # ▶️ Executando o projeto
-Primeiramente abra o WampServer ou derivados, inicie o localhost e verifique no banco de dados MySQL (utilizei o phpmyadmin como base) se está funcionando a autenticação.
+
+1º - Inicie WampServer;
+<br>
+2º - Abra o PhpMyAdmin;
+<br>
+3º - Crie uma base de dados chamado form_cadastro e a tabela com nome de formulario(caso não utilize o phpmyadmin ou o nome do seu banco de dados seja diferente, basta modificar os dados no arquivo config.php);
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29473781/159006791-0938bc62-79b2-41e0-a235-612828280a64.png" />
+</p>
+4º - Digite na barra de endereço localhost/Form.
