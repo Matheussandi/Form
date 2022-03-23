@@ -35,8 +35,6 @@ Formulário com usuário/email e senha, ligado ao banco de dados para conferir s
  
 - [BootStrap](https://getbootstrap.com/)
  
-- [WampServer](https://www.wampserver.com/en/)
- 
 # ▶️ Executando o projeto
 
 1º - Inicie WampServer;
